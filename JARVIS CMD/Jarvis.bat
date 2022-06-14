@@ -27,9 +27,6 @@ if "%C%"=="google time" goto google
 if "%C%"=="open google" goto google
 if "%C%"=="shutdown" goto shutdown
 if "%C%"=="hide" goto hide
-if "%C%"=="teacher" goto hide
-if "%C%"=="parent" goto hide
-if "%C%"=="parents" goto hide
 if "%C%"=="weather" goto weather
 if "%C%"=="rain check" goto weather
 if "%C%"=="is it going to rain" goto weather
@@ -55,9 +52,7 @@ if "%C%"=="thanks" goto thank
 if "%C%"=="im back" goto back
 if "%C%"=="i have arrived" goto back
 if "%C%"=="%username%'s back" goto back
-if "%C%"=="should i go swimming" goto swimming
 if "%C%"=="do you like siri" goto siri
-if "%C%"=="should i code you in python" goto python
 
 :unknown
 echo I don't understand sir enter command 'help' for help.
@@ -93,7 +88,7 @@ goto start
 
 :weather
 echo Displaying weather now, sir.
-start chrome shorturl.at/cxzD3
+start chrome weather.com
 goto start
 
 :dim
@@ -163,16 +158,8 @@ goto start
 echo Welcome back %username%.
 goto start
 
-:swimming
-echo That is entirely your decision sir.
-goto start
-
 :siri
 echo Siri amuses me. Siri has limited functionalty unlike me. Even google assistant could do better.
-goto start
-
-:python
-echo I believe it would be better than the batch file I currently run in as it is cross device compatible.
 goto start
 
 :help
@@ -187,9 +174,6 @@ echo google time - starts google
 echo open google - starts google
 echo shutdown - asks for confimation of shutdown
 echo hide - opens google.com
-echo teacher - opens google.com
-echo parent - opens google.com
-echo parents - opens google.com
 echo weather - opens weather in chrome
 echo rain check - opens weather in chrome
 echo is it going to rain - opens weather in chrome
